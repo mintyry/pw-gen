@@ -20,6 +20,7 @@ let upper = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N
 'U', 'V', 'W', 'X', 'Y', 'Z'];
 console.log(upper);
 
+let master = [];
 
 //prompts for password criteria
 alert('Please follow the subsequent prompts to generate a random password.');
@@ -30,16 +31,33 @@ let userUpper = confirm('Do you want uppercase letters in your password?');
 let passwordLength = prompt('How long do you want your password to be?\nPlease enter a value of at least 8, but no more than 128.')
 
 
-
 function generatePassword () {
     if (userSpecial === true) {
+        master.concat.special;
     }
+    if (userNum === true) {
+        master.concat.num;
+    }
+    if (userLower === true) {
+        master.concat.lower;
+    }
+    if (userUpper === true) {
+        master.concat.upper;
+    };
+
+    //if i have 0 apples, and i get one more apple, add it to basket, but stop when i have 5
+    // for (let i = 0; i <  ; i++)
+    //  {
+   // master
+    // }
+
+    return;
 }
+
+generatePassword();
 
 
 // Write password to the #password input
-
-
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
