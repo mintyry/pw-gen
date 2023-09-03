@@ -58,9 +58,9 @@ function generatePassword() {
         alert('Please select at least one criteria.');
         return generatePassword();
     }
-    /*This is if user enters a number not within our parameters of 8-128*/
-    if (passwordLength < 8 || passwordLength > 128) {
-        alert('Please enter an amount between 8 and 128.');
+    /*This is if user enters a number not within our parameters of 8-128 or isn't even a number. */
+    if (passwordLength < 8 || passwordLength > 128 || passwordLength !== num) {
+        alert('Practice makes perfect -- let\'s try again.\nPlease enter an amount between 8 and 128.');
         return generatePassword();
     }
     console.log(master);
