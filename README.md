@@ -20,25 +20,25 @@ Upon landing on the page, when the user clicks "Generate Password," they will be
 
 Please see the following screenshots to see the user's POV:
 
-![Special Characters?](assets/spec.png)
-![Numbers?](assets/num.png)
-![Lowercase letters?](assets/low.png)
-![Uppercase letters?](assets/upp.png)
+![Special Characters?](./assets/spec.png)
+![Numbers?](./assets/num.png)
+![Lowercase letters?](./assets/low.png)
+![Uppercase letters?](./assets/upp.png)
 
 If the user is being difficult, they will be alerted that they have to choose at least one criteria for the password generator, because otherwise, no password can be created!
 
-![Didn't select any criteria](assets/noselect.png)
+![Didn't select any criteria](./assets/noselect.png)
 
 After the user has selected the criteria they want in their password, they will be asked how many characters they want their password to be -- it must be at least 8 characters but no more than 128.
 
 If they do not follow instructions (eg: choose a number less than 8, more than 128, or dont even include numbers), they will receive the following prompt repeatedly until they learn to follow basic instructions.
 
-![Entered incorrect value](assets/incorrectvalue.png)
+![Entered incorrect value](./assets/incorrectvalue.png)
 
 Once they enter a valid number, their password will be generated!
 
-![Entered correct value](assets/correctvalue.png)
-![New password!](assets/generatedpw.png)
+![Entered correct value](./assets/correctvalue.png)
+![New password!](./assets/generatedpw.png)
 
 
 ## Credits
