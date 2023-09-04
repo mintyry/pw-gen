@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a password generator made for the purpose of its namesake -- generating a (strong, randomized)password with personalized criteria to the user's liking, which can be used to set up security for various technology platforms, be it accounts, files, etc. This password generator was crafted with HTML, CSS, and JavaScript.
+This is a password generator made for the purpose of its namesake -- generating a (strong, randomized) password with personalized criteria to the user's liking, which can be used to set up security for various technology platforms, be it accounts, files, etc. This password generator was crafted with HTML, CSS, and JavaScript.
 
 The generator chooses from the capitalized alphabet, lowercased alphabet, numbers, and special keyboard characters of various punctuation. The generator pulls from these cateogories and shuffles the characters around to create a truly difficult password to crack, solving the problem of unsecure passwords.
 
@@ -16,7 +16,7 @@ N/A
 
 ## Usage
 
-Upon landing on the page, when the user clicks "Generate Password," they wlll be presented with messages to confirm which criteria they would prefer to have included in their generated password: uppercase letters, then lowercase letters, then numbers, then special characters. They may click "OK" to include or "cancel" to exclude.
+Upon landing on the page, when the user clicks "Generate Password," they will be presented with messages to confirm which criteria they would prefer to have included in their generated password: special characters, then numbers, then lowercase letters, then uppercase letters. They may click "OK" to include or "cancel" to exclude the proposed criteria.
 
 Please see the following screenshots to see the user's POV:
 

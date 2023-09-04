@@ -33,7 +33,19 @@ function generatePassword() {
     let userNum = confirm('Do you want numbers in your password?');
     let userLower = confirm('Do you want lowercase letters in your password?');
     let userUpper = confirm('Do you want uppercase letters in your password?');
-    let passwordLength = prompt('How long do you want your password to be?\nPlease enter a value of at least 8, but no more than 128.')
+
+       /*This is if user doesn't choose any criteria */
+       if (userSpecial + userNum + userLower + userUpper === 0) {
+        alert('Do you even want to make a password?\nPlease select at least one criteria.');
+        return generatePassword();
+    }
+    let passwordLength = prompt('How long do you want your password to be?\nPlease enter a value of at least 8, but no more than 128.');
+    
+        /*This is if user enters a number not within our parameters of 8-128 or isn't even a number. */
+        if (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) {
+            alert('Practice makes perfect -- let\'s try again.\nPlease enter an amount between 8 and 128.');
+            return generatePassword();
+        }
 
     console.log(userSpecial);
     console.log(userNum);
@@ -53,26 +65,19 @@ function generatePassword() {
     if (userUpper === true) {
         master = master.concat(upper);
     }
-    /*This is if user doesn't choose any criteria */
-    if (userSpecial === false && userNum === false && userLower === false && userUpper === false) {
-        alert('Please select at least one criteria.');
-        return generatePassword();
-    }
-    /*This is if user enters a number not within our parameters of 8-128 or isn't even a number. */
-    if (passwordLength < 8 || passwordLength > 128 || passwordLength !== num) {
-        alert('Practice makes perfect -- let\'s try again.\nPlease enter an amount between 8 and 128.');
-        return generatePassword();
-    }
+
     console.log(master);
+
     /* The following for loop is saying: "For when I start with 0 characters, i will keep adding one more character until
     I hit how many characters the user indicates they want" */
-    /* When i this entire condition is true, i want to randomize the characters that have been chosen:
+    /* When this entire condition is true, i want to randomize the characters that have been chosen:
     Math.random be any number between 0 and 1 multiplied by the current master array's length of indices, this way you count
     only until the end of the master array. Math.Floor then rounds that down to nearest whole number (which would be character's index.)
     So for example, let's say master.length is 20 characters. With random and floor, characters will be chosen from indices 0-19. 
     That's what we would like it to do, but as it is written, it only produces a number. 
-    Perhaps master then wrapping entire formula in brackets will treat it as an accessible character*/
-
+    Perhaps master then wrapping entire formula in brackets will treat the formula as an index number/accessible character
+    PS: It did! */
+    /* += allows the new value to be continuously added to the password string(pw) */
     for (i = 0; i < passwordLength; i++) {
         pw += master[Math.floor(Math.random() * master.length)];
         console.log(pw);
