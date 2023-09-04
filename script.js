@@ -52,7 +52,7 @@ function generatePassword() {
     console.log(userLower);
     console.log(userUpper);
     console.log(passwordLength);
-
+/* following if statement adds the arrays to the master array based on what user selects */
     if (userSpecial === true) {
         master = master.concat(special);
     }
