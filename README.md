@@ -47,4 +47,4 @@ Starter code was provided by edX.
 
 ## Project Repository
 
-Please enjoy the deployed application [here](https://mintyry.github.io/pw-gen/)!
+Please enjoy the deployed application [here](https://mintyry.github.io/pw-generator/)!
